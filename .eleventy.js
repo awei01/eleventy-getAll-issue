@@ -3,7 +3,10 @@ module.exports = function (eleventy) {
     return collection.getFilteredByGlob('pages/**')
   })
 
-  // return {}
+  /**
+  Comment out the following line to see the bug occur
+  */
+  return {}
 
   return {
     dir: {
