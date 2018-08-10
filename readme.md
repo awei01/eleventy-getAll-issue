@@ -21,3 +21,7 @@
   Eleventy:TemplateMap Collection: collections.all size: 1 +2ms
   Eleventy:TemplateMap Collection: collections.pages size: 0 +4ms
 ```
+
+## Notes
+* I used `.src` instead of `src` because `eleventy` will otherwise pick up the `src` directory in processing when using the default `dir.input`. This is purely to better illustrate the bug.
+* I'm using symlinks but the bug should still occur if we moved the folders into the `dir.input` folder
